@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Card, CardText, CardBody,
+    Card, CardText,CardHeader, CardBody,
     CardTitle, CardSubtitle
 } from 'reactstrap';
 
@@ -8,8 +8,9 @@ export default function PlayerStats({name , country, searches}) {
     return(
         <div className='playerCard'>
             <Card>
+            <CardHeader>{name}</CardHeader>
                 <CardBody>
-                    <CardTitle>{name}</CardTitle>
+                    <CardTitle>Female Player</CardTitle>
                     <CardSubtitle>Country: {country}</CardSubtitle>
                     <CardText>Searches: {searches}</CardText>
                 </CardBody>

@@ -1,8 +1,7 @@
 import React from 'react';
 import PlayerCard from './Components/PlayerCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import 'App.css';
 
 class App extends React.Component {
 
