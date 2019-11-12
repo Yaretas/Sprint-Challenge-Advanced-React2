@@ -1,7 +1,7 @@
 import React from 'react';
 import PlayerCard from './Components/PlayerCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'App.css';
+import './App.css';
 
 class App extends React.Component {
 
@@ -26,7 +26,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Women's World Cup</h1>
-        {this.state.dataPlayers.map(player => <PlayerCard key={player.id} name={player.name} country={player.country} searches={player.searches} />)}
+        <div className="Box">
+          {this.state.dataPlayers.map(player => <PlayerCard key={player.id} name={player.name} country={player.country} searches={player.searches} />)}
+        </div>
       </div>
     );
   }
